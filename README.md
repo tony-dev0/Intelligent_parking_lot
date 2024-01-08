@@ -15,11 +15,11 @@ in the `setup()` function You will need to:
 
 Example
 
-include the servo library
+<p>include the servo library</p>
 
 ``` #include <Servo.h> ```
 
-defining constatnts
+Defining constants
 
 ``` 
     const int ultrasonicPin = 3 // or #define ultrasonicPin 3

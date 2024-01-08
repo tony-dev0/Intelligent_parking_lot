@@ -14,19 +14,26 @@ in the `setup()` function You will need to:
   - Define the variables for the ultrasonic sensor
 
 Example
+
 include the servo library
+
 ``` #include <Servo.h> ```
 
 defining constatnts
-``` const int ultrasonicPin = 3 // or #define ultrasonicPin 3
+
+``` 
+    const int ultrasonicPin = 3 // or #define ultrasonicPin 3
     const int parkingLotWidth = 10;
     const int openingSpeed = 50;
     int gateLeft = 0;
     int sensorDistance = 0; 
+
 ```
 
 In the `loop()` function
+
  Detect the approach of a car using the ultrasonic sensor
+
 ```
  if (sensorDistance < 200)
  {  // Open the parking lot gates 
@@ -43,7 +50,8 @@ if (digitalRead(infraredPin) == HIGH) {
    // Close the parking lot gates if a car is detected digitalWrite(motorDriverPin, LOW);
   gateLeft = 0; 
   gateRight = 0; } 
-  ```
+
+```
 
 ## Components Used
 - UBTECH Ukit Pack (robotic body)

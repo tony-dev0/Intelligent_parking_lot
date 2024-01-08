@@ -22,11 +22,13 @@ defining constatnts
     const int parkingLotWidth = 10;
     const int openingSpeed = 50;
     int gateLeft = 0;
-    int sensorDistance = 0; ```
+    int sensorDistance = 0; 
+```
 
 In the `loop()` function
  Detect the approach of a car using the ultrasonic sensor
-``` if (sensorDistance < 200)
+```
+ if (sensorDistance < 200)
  {  // Open the parking lot gates 
    digitalWrite(motorDriverPin, HIGH); 
    gateLeft = 1; 
@@ -40,7 +42,7 @@ if (sensorDistance > 0)
 if (digitalRead(infraredPin) == HIGH) {
    // Close the parking lot gates if a car is detected digitalWrite(motorDriverPin, LOW);
   gateLeft = 0; 
-  gateRight = 0; } } 
+  gateRight = 0; } 
   ```
 
 ## Components Used

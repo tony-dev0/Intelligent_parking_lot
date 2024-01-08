@@ -40,7 +40,8 @@ if (sensorDistance > 0)
 if (digitalRead(infraredPin) == HIGH) {
    // Close the parking lot gates if a car is detected digitalWrite(motorDriverPin, LOW);
   gateLeft = 0; 
-  gateRight = 0; } } ```
+  gateRight = 0; } } 
+  ```
 
 ## Components Used
 - UBTECH Ukit Pack (robotic body)
